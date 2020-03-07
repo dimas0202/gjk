@@ -66,8 +66,8 @@ echo color("green"," =================================== \n");
 				$message = fetch_value($code1,'"message":"','"');
 				if(strpos($code1, 'You can use this promo now...')){
 					echo "\n".color("green","+] Message: ".$message);
-					goto goride;
-				}		
+				}
+				
 				$cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
 				$total = fetch_value($cekvoucher,'"total_vouchers":',',');
 				$voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
