@@ -62,12 +62,11 @@ echo color("green"," =================================== \n");
 					echo color("yellow",".");
 					sleep(1);
 				}
-				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
-				$message = fetch_value($code1,'"message":"','"');
-				if(strpos($code1, 'You can use this promo now...')){
-					echo "\n".color("green","+] Message: ".$message);
-					sleep(1);
-				}
+				sleep(3);
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
+				$message = fetch_value($gocar,'"message":"','"');
+				echo "\n".color("green","+] Message: ".$message);
+				sleep(3);
 				
 				$cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
 				$total = fetch_value($cekvoucher,'"total_vouchers":',',');
