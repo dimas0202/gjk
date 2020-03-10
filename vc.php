@@ -63,7 +63,7 @@ echo color("green"," =================================== \n");
 					sleep(1);
 				}
 				sleep(3);
-				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCARPAY"}');
 				$message = fetch_value($gocar,'"message":"','"');
 				echo "\n".color("green","+] Message: ".$message);
 				sleep(3);
@@ -75,7 +75,7 @@ echo color("green"," =================================== \n");
 					sleep(1);
 				}
 				sleep(3);
-				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDEPAY"}');
 				$message = fetch_value($gocar,'"message":"','"');
 				echo "\n".color("green","+] Message: ".$message);
 				sleep(3);
