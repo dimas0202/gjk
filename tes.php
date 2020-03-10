@@ -25,10 +25,9 @@ if($numbers == "08") {
 }
 
 $nama = nama();
-$nama1 = 'Ardy';
 $email = strtolower(str_replace(" ", "", $nama) . mt_rand(100,999) . "@gmail.com");
-$data1 = '{"name":"' . $nama1 . '","email":"' . $email . '","phone":"+' . $number . '","signed_up_country":"ID"}';
-$reg = curl('https://api.gojekapi.com/v5/customers', $data1, $headers);
+$data = '{"name":"' . $nama . '","email":"' . $email . '","phone":"+' . $number . '","signed_up_country":"ID"}';
+$reg = curl('https://api.gojekapi.com/v5/customers', $data, $headers);
 $regs = json_decode($reg[0]);
 
 if($regs->success == true) {
