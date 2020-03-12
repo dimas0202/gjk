@@ -92,6 +92,30 @@ echo color("green"," =================================== \n");
 				echo "\n".color("green","+] Message: ".$message);
 				sleep(3);
 				
+				echo "\n".color("yellow","!] Claim Voc Car 4");
+				echo "\n".color("yellow","!] Please wait...");
+				for($a=1;$a<=3;$a++){
+					echo color("yellow",".");
+					sleep(1);
+				}
+				sleep(3);
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AYOCOBAGOCAR"}');
+				$message = fetch_value($gocar,'"message":"','"');
+				echo "\n".color("green","+] Message: ".$message);
+				sleep(3);
+				
+				echo "\n".color("yellow","!] Claim Voc Car 5");
+				echo "\n".color("yellow","!] Please wait...");
+				for($a=1;$a<=3;$a++){
+					echo color("yellow",".");
+					sleep(1);
+				}
+				sleep(3);
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOCARYUK"}');
+				$message = fetch_value($gocar,'"message":"','"');
+				echo "\n".color("green","+] Message: ".$message);
+				sleep(3);
+				
 				$cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
 				$total = fetch_value($cekvoucher,'"total_vouchers":',',');
 				$voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
@@ -149,5 +173,3 @@ echo color("green"," =================================== \n");
 			echo color("yellow","!] Please register again using other number \n");
 			goto ulang;
 		}
-//	}
-// echo change()."\n";
