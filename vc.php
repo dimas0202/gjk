@@ -56,7 +56,31 @@ echo color("green"," =================================== \n");
 				save("token.txt",$token);
 				
 				echo color("green","\n===========(REDEEM VOUCHER)===========");
-				echo "\n".color("yellow","!] Claim Voc Car");
+				echo "\n".color("yellow","!] Claim Voc Car 1");
+				echo "\n".color("yellow","!] Please wait...");
+				for($a=1;$a<=3;$a++){
+					echo color("yellow",".");
+					sleep(1);
+				}
+				sleep(3);
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
+				$message = fetch_value($gocar,'"message":"','"');
+				echo "\n".color("green","+] Message: ".$message);
+				sleep(3);
+				
+				echo "\n".color("yellow","!] Claim Voc Car 2");
+				echo "\n".color("yellow","!] Please wait...");
+				for($a=1;$a<=3;$a++){
+					echo color("yellow",".");
+					sleep(1);
+				}
+				sleep(3);
+				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOCAR"}');
+				$message = fetch_value($gocar,'"message":"','"');
+				echo "\n".color("green","+] Message: ".$message);
+				sleep(3);
+				
+				echo "\n".color("yellow","!] Claim Voc Car 3");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
@@ -64,18 +88,6 @@ echo color("green"," =================================== \n");
 				}
 				sleep(3);
 				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCARPAY"}');
-				$message = fetch_value($gocar,'"message":"','"');
-				echo "\n".color("green","+] Message: ".$message);
-				sleep(3);
-				
-				echo "\n".color("yellow","!] Claim Voc Ride");
-				echo "\n".color("yellow","!] Please wait...");
-				for($a=1;$a<=3;$a++){
-					echo color("yellow",".");
-					sleep(1);
-				}
-				sleep(3);
-				$gocar = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDEPAY"}');
 				$message = fetch_value($gocar,'"message":"','"');
 				echo "\n".color("green","+] Message: ".$message);
 				sleep(3);
